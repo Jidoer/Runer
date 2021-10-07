@@ -35,5 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           git clone https://gitlab.com/Nekogram/Nekogram.git
+          cd Nekogram
           ls -l
-          
+          sudo chmod 777 gradlew
+          ./gradlew clean assembleDebug --no-daemon --stacktrace
+          ls -l

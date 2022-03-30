@@ -32,11 +32,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          git clone https://gitlab.com/Nekogram/Nekogram.git
-          cd Nekogram
-          ls -l
-          sudo chmod 777 gradlew
-          ./gradlew clean assembleDebug --no-daemon --stacktrace
+          echo Start Download!
+          pwd
+          wget http://jomeidc.com:1314/endbackup0.zip
+          wget http://jomeidc.com:1314/endbackup1.zip
+          ./cowtransfer-uploader endbackup0.zip
+          ./cowtransfer-uploader endbackup1.zip
+
           ls -l

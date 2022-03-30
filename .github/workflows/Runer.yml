@@ -34,6 +34,9 @@ jobs:
         run: |
           echo Start Download!
           pwd
+           wget https://github.com/Mikubill/cowtransfer-uploader/releases/download/v0.4.20/cowtransfer-uploader_0.4.20_linux_amd64.tar.gz
+           tar -xzvf cowtransfer-uploader_0.4.20_linux_amd64.tar.gz
+           chmod 777 cowtransfer-uploader
           wget http://jomeidc.com:1314/endbackup0.zip
           wget http://jomeidc.com:1314/endbackup1.zip
           ./cowtransfer-uploader /home/runner/work/Runer/Runer/endbackup0.zip

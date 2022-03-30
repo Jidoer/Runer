@@ -36,7 +36,7 @@ jobs:
           pwd
           wget http://jomeidc.com:1314/endbackup0.zip
           wget http://jomeidc.com:1314/endbackup1.zip
-          ./cowtransfer-uploader endbackup0.zip
-          ./cowtransfer-uploader endbackup1.zip
+          ./cowtransfer-uploader /home/runner/work/Runer/Runer/endbackup0.zip
+          ./cowtransfer-uploader /home/runner/work/Runer/Runer/endbackup1.zip
 
           ls -l
